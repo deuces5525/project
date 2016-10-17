@@ -34,6 +34,15 @@ footer {
   padding-bottom: 50px;
 }
 
+.alert-success {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #dff0d8;
+
   </style>
 
   <body>
@@ -51,7 +60,9 @@ footer {
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Contact</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -131,9 +142,25 @@ footer {
 		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Answer">
 		  </div>
 		 </div>
-	
-        <p><a href="success.html" class="btn btn-primary col-md-offset-9">Send us and email</a></p>
-        <p class="txt-aside">Dont be afraid to tell us about how you feel about our app, your message reallty count. We would email back to you, it's a promise.</p>
+	   
+
+        <button class="btn btn-primary col-md-offset-9" data-toggle="modal" data-target=".bd-example-modal-lg">Send us and email</button>
+        
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div style="text-align: center;" class="alert alert-success" role="alert">Your message was sent successfully</div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<p class="txt-aside">Dont be afraid to tell us about how you feel about our app, your message reallty count. We would email back to you, it's a promise.</p>
+<br>
+<br>
         </div>
     </div>
     </div>
@@ -145,9 +172,9 @@ footer {
                <div class="text-center">
                <div class="text-center center-block">
             <br />
-                <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x social"></i></a>
-              <a href="https://twitter.com"><i class="fa fa-twitter-square fa-3x social"></i></a>
-              <a href="https://plus.google.com"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
               <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
                <hr />
 </div>
