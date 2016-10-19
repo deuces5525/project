@@ -22,29 +22,6 @@ section {
   padding: 40px 0 40px 0;
 }
 
-.jumbotron .app-btn {
-  width: 150px;
-  margin-right: 30px;
-}
-
-.jumbotron {
-  background: url(image/max.jpg) no-repeat top center;
-  height: 550px;
-  overflow: none;
-
-}
-
-.jumbotron h1{
-  margin-top: 80px;
-}
-
-.jumbotron p{
-  margin-bottom: 20px;
-}
-
-.jumbotron .showcase-img{
-  width: 38%;
-}
 
 .design {
   width: 100%;
@@ -63,15 +40,106 @@ footer {
   padding-bottom: 50px;
 }
 
+.carousel-img {
+  height: 20px;
+  overflow: none;
+
+}
 
 .txt {
   color: black;
 }
 
-
 #social-fb:hover {
      color: #3B5998;
    }
+
+   .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+}
+
+.carousel .showcase-img{
+  width: 60%;
+}
+
+.carousel-caption .app-btn {
+  width: 150px;
+  margin-right: 30px;
+  }
+
+.carousel p{
+  margin-bottom: 20px;
+}
+
+element.style {
+}
+.carousel-inner>.item>img {
+    line-height: 1;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 550px;
+    width: 100%;
+}
+img {
+    border: 0;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Inherited from body
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+Inherited from html
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+Pseudo ::before element
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carousel {
+  background-color: #3399ff;
+  padding-bottom: 50px;
+}
 
   </style>
 
@@ -98,33 +166,81 @@ footer {
       </div>
     </div>
   </nav>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="image/max.jpg" clas="carousel-img">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
           <div class="col-md-6">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
             <h1>ADJUST YOUR <span class="en-text">FOCUS</span></h1>
             <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="https://itunes.apple.com/us/genre/ios/id36?mt=8"><img class="app-btn" src="image/apple.png"></a>
-            <a href="https://play.google.com/store/apps?utm_source=na_Med&utm_medium=hasem&utm_content=Mar0916&utm_campaign=Evergreen&pcampaignid=MKT-DR-na-us-all-Med-hasem-ap-Evergreen-Mar0916-1-EXA%7cONSEM_kwid_43700007229200881&gclid=CJGj9Lj_4c8CFZSkNwodPksEdw&gclsrc=ds"><img class="app-btn" src="image/google.png"></a>
+            <a href="https://itunes.apple.com/us/genre/ios/id36?mt=8"><img class="app-btn"src="image/apple.png"></a>
+            <a href="https://play.google.com/store?&utm_source=emea_Med&utm_medium=hasem&utm_content=Oct1515&utm_campaign=Evergreen&pcampaignid=MKT-DR-emea-gh-all-Med-hasem-py-Evergreen-Oct1515-1-BKWS.HASEM_kwid_43700008633190198&gclid=CLnGsqTX5M8CFYvYGQodLjQNUg&gclsrc=ds#/now"><img class="app-btn"src="image/google.png"></a>
           </div>
           <div class="col-md-6">
-            <img class="showcase-img" src="image/newi.png">
+            <img class="showcase-img"src="image/newi.png">
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+          <p>
+          "The fastest way to grow your business with the leader in "
+          <em>Technology</em>
+          <span>
+            "Get in touch with us today and lets us handle the Technology aspect of your business for you!"
+          </span>
+          </p>
+        </div>
+      </div>
+          </div>
+        <div class="item">
+          <img src="image/bluri.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/blury.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
           </div>
         </div>
       </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
     </div>
   <section id="middle">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="image/design.jpg" class="design">
+          <img src="image/bluri.jpg" class="design">
           <h2>Stay Outta Line</h2>
           <p style="font-family:courier">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua</p>
           <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
   Read More
 </button>
+
 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
