@@ -81,7 +81,7 @@
 		box-sizing: border-box;
 		}
 		body {
-	    font-family: "Open Sans", Arial, sans-serif;
+	    font-family: Open Sans!important;
 		font-size: 14px;
 		line-height: 1.42857143;
 		color: #333;
@@ -93,7 +93,6 @@
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		html {
-		font-family: sans-serif;
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
 		}
@@ -117,6 +116,13 @@
 		    color: #777;
 		    margin: 0 0 20px;
 		    line-height: 24px;
+		}
+
+		a.link{
+			color: #F79021;
+		}
+		a.link:hover{
+			color: #fff;
 		}
 
 		.upper-footer{
@@ -212,18 +218,18 @@
 			.social-circle li a {
 				display:inline-block;
 				position:relative;
-				margin:0 auto 0 auto;
+				margin:-5px;
 				-moz-border-radius:50%;
 				-webkit-border-radius:50%;
 				border-radius:50%;
 				text-align:center;
-				width: 50px;
-				height: 50px;
-				font-size:20px;
+				width: 30px;
+				height: 30px;
+				font-size:15px;
+				padding:5px;
 			}
 			.social-circle li i {
-				margin:0;
-				line-height:50px;
+				margin:0, 50,0, 0px;
 				text-align: center;
 				color: black;
 			}
@@ -248,9 +254,10 @@
 				transition: all 0.8s;
 			}
 
-			a {
+			a.icoFacebook, a.icoTwitter, a.icoLinkedin{
 			 background-color: white;   
 			}
+
 		</style>
 	</head>
 	<body>
@@ -343,7 +350,7 @@
 					<div class="col-md-4">
 						<img src="image/bluri.jpg" class="design">
 						<h2>Stay Outta Line</h2>
-						<p style="font-family:courier">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua</p>
 						<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
 						Read More
@@ -382,7 +389,7 @@
 					<div class="col-md-4">
 						<img src="image/dir.jpg" class="design">
 						<h2>Stay Line</h2>
-						<p style="font-family:courier;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua</p>
 						<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
 						Read More
@@ -421,7 +428,7 @@
 					<div class="col-md-4">
 						<img src="image/dire.jpg" class="design">
 						<h2>Stay Real</h2>
-						<p style="font-family:courier;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua</p>
 						<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
 						Read More
@@ -466,7 +473,7 @@
 			
 				<div class="upper-footer">
 					<div class="row">	
-						<div class="col-md-11 col-md-offset-1"> 
+						<div class="col-md-10 col-md-offset-1"> 
                             
 				  <div class="row" >
 					<div class="col-md-3">
@@ -497,23 +504,16 @@
 						</div>
 						<div>
 							<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
-							<strong>Email:</strong> info@nalosolutions.com</p>
+							<strong>Email:</strong><a href="#" class="link">info@nalosolutions.com</a></p>
 						</div>
 					</div>
 					<div class="col-md-2">
 						<h4>Follow Us</h4><br>
-						<div class="fa-stack fa-lg">
-						  <a href="#"><i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-facebook fa-stack-1x"></i></a>
-						</div>
-						<a href="#"><div class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-twitter fa-stack-1x"></i>
-						</div></a>
-						<a href="#"><div class="fa-stack fa-lg">
-						  <i class="fa fa-circle fa-stack-2x"></i>
-						  <i class="fa fa-linkedin fa-stack-1x"></i>
-						</div></a>
+						 <ul class="social-network social-circle">
+		                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+		                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+		                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+	                    </ul>
 					</div>
 								  </div></br></br>
 					  </div>
@@ -528,22 +528,18 @@
 									<img src="image/nalosolutions-logo.png" style="height: 90%; width: 90%;">
 								</div>
 								<div class="col-md-7">
-								<p>© 2016 <a href="#" style="color:#F79021 ;">NALO Solutions Limited</a> . All Rights Reserved.</p>
+								<p>© 2016 <a href="#" class="link">NALO Solutions Limited</a> . All Rights Reserved.</p>
 								</div>
 								<div class="col-md-4">
+								<ul class="list-inline">
+								  <li><a href="#" class="link">Products</a></li>|
+								  <li><a href="#" class="link">Pricing</a></li>|
+								  <li><a href="#" class="link">Help Center</a></li>|
+								  <li><a href="#" class="link">Careers</a></li>|
+								  <li><a href="#" class="link">TOS</a></li>
+								</ul>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-		                    <ul class="social-network social-circle">
-		                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-		                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-		                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-		                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-		                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-		                    </ul>				
 						</div>
 					</div>
 				</div>
