@@ -14,6 +14,10 @@ body {
   padding-top: 50px;
 }
 
+.navbar {
+  padding-bottom: 40px;
+}
+
 .en-text {
   color: #1caa98 !important;
 }
@@ -141,31 +145,153 @@ Pseudo ::after element
   padding-bottom: 50px;
 }
 
+.navbar {
+  border-top: 2px solid #f79021;
+  padding-bottom: 20px;
+}
+
+.navbar-default
+.navbar-nav>.active>a {
+  color: #fff;
+  background-color: #3D5FAC;
+
+}
+
+.navbar-default
+.navbar-nav>li>a {
+  color: #3D5FAC;
+}
+
+.navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #337ab7;
+    background-color: #f8f8f8;
+}
+
+.ws-nowrap {
+  color: #777;
+}
+}
+
+
+@-webkit-keyframes glowing {
+  0% { background-color: ##F79021; -webkit-box-shadow: 0 0 3px #F79021; }
+  50% { background-color: ##F79021; -webkit-box-shadow: 0 0 40px #F79021; }
+  100% { background-color: ##F79021; -webkit-box-shadow: 0 0 3px #F79021; border: 3px solid #FFFFFF}
+}
+
+
+@keyframes glowing {
+  0% { background-color: ##F79021; box-shadow: 0 0 3px #F79021; }
+  50% { background-color: ##F79021; box-shadow: 0 0 40px #F79021; }
+  100% { background-color: ##F79021; box-shadow: 0 0 3px #F79021; border: 3px solid #FFFFFF}
+}
+
+
+
+.button:hover {
+    border-color: #fff;
+    background-color: #3D5FAC;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+
+.button {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+  border: 3px solid #FFFFFF
+
+}
+
+.button {
+    border: 3px solid #FFFFFF;
+    color: #fff;
+    font-size: 1em;
+    padding: 7px 16px;
+    display: inline-grid;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #F79021;
+}
+
+
+
+.button1 {
+  border: 3px solid #F79021;
+  color: #000;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.button1:hover {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none!important;
+}
+
+
+
+
   </style>
 
 </head>
 <body>
   
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapased" data-toggle="collapse" data-target="#navbar" aria-expand="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand en-text" href="project.html">BLUR</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <br>
+      <br>
+      <img src="image/nalosolutions-logo.png">
     </div>
-  </nav>
+    <br>
+    <div class="collapse navbar-collapse pull-right col-md-12" id="myNavbar">
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <strong> 
+     <span class="ws-nowrap">
+     <i class="fa fa-phone" aria-hidden="true"></i>
+      (+233) 302-311-489
+    </span>
+    </strong>
+    <button class="btn btn-large button" id="btnLogin">SIGNUP/LOGIN</button>&nbsp; &nbsp; &nbsp;<button class="btn btn-large button1" id="btnLogin">PAY ONLINE</button></p>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">NALO
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">The Team</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Software & App Development</a></li>
+            <li><a href="#">Bulk SMS Services</a></li>
+            <li><a href="#">Content Services</a></li>
+            <li><a href="#">Payment Systems</a></li>
+          </ul>
+        </li>
+        <li><a href="#band">CAREERS</a></li>
+        <li><a href="#tour">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -192,21 +318,8 @@ Pseudo ::after element
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-          <p>
-          "The fastest way to grow your business with the leader in "
-          <em>Technology</em>
-          <span>
-            "Get in touch with us today and lets us handle the Technology aspect of your business for you!"
-          </span>
-          </p>
-        </div>
-      </div>
-          </div>
         <div class="item">
-          <img src="image/bluri.jpg" alt="">
+          <img src="image/max.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -216,7 +329,7 @@ Pseudo ::after element
           </div>
         </div>
         <div class="item">
-          <img src="image/blury.jpg" alt="">
+          <img src="image/max.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -224,6 +337,14 @@ Pseudo ::after element
               <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
             </div>
           </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+          <p>Thanks for visiting our website, you can get blur filter editor on Google Play Store and Apple App Store</p>
+        </div>
+        </div>
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
@@ -233,7 +354,7 @@ Pseudo ::after element
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="image/bluri.jpg" class="design">
+          <img src="image/design.jpg" class="design">
           <h2>Stay Outta Line</h2>
           <p style="font-family:courier">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua</p>
